@@ -131,6 +131,9 @@ end
 
 function loadpostinner(results, f, filename)
   fixdate(f)
+  if f.content == nil then
+    error(filename + " has no content! Make sure it's formated correctly!")
+  end
   f.slug = string.gsub(filename, ".lua", "")
   f.description = string.sub(string.gsub(tostring(markdown(f.content.content)), "<[^>]+>", ""), 1, 500)
   table.insert(results, f)
@@ -166,14 +169,14 @@ end
 local posts = loadfiles([[./posts/]], loadpostinner)
 table.sort(posts, function(a, b) return a.date > b.date end)
 local authors = loadfiles([[./authors/]], loadauthor)
-local jobs = loadfiles([[./jobs/]], loadjob)
-table.sort(jobs, function(a, b) return a.date > b.date end)
+--local jobs = loadfiles([[./jobs/]], loadjob)
+--table.sort(jobs, function(a, b) return a.date > b.date end)
 
 writepage("index", (loadpage "index")(posts, authors))
 writepage("index", (loadpage "post")(loadpost("./", "privacy.lua"), authors), "privacy")
 writepage("index", (loadpage "post")(loadpost("./", "tos.lua"), authors), "tos")
 writepage("index", (loadpage "posts")(posts, authors), "posts")
-writepage("index", (loadpage "careers")(jobs), "careers")
+--writepage("index", (loadpage "careers")(jobs), "careers")
 
 do
   local f = io.open(dest.."/index.xml", "w+")
@@ -186,9 +189,9 @@ lfs.mkdir(dest .. "/posts/")
 for i,v in ipairs(posts) do
   writepage("index", (loadpage "post")(v, authors), "posts/"..v.slug)
 end
-for i,v in ipairs(jobs) do
-  writepage("index", (loadpage "job")(v), "careers/"..v.id)
-end
+--for i,v in ipairs(jobs) do
+--  writepage("index", (loadpage "job")(v), "careers/"..v.id)
+--end
 
 do
   local f = io.open(dest.."/sitemap.xml", "w+")

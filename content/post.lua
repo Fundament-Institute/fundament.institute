@@ -29,14 +29,12 @@ return function(post, authors)
   return html {
     top(post.title, "/posts/" .. post.slug, site.fs),
     body {
-      div { class="wrapper" },
       header { 
         nav(site.fs.navbar),
       },
       main { 
         section { 
-          author,
-          pathbox(post.path),
+          --author,
           h1{a{ href="/posts/"..post.slug, post.title}},
           hr{},
           article { post.content },

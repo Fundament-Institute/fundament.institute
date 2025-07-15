@@ -14,7 +14,6 @@ return function(posts, authors)
   return html {
     top("Archive", "/posts", site.fs),
     body {
-      div { class="wrapper" },
       header { 
         nav(site.fs.navbar),
       },

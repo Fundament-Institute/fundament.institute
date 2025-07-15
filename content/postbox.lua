@@ -17,13 +17,12 @@ return function(post, authors, maxed)
   end
 
   return section { 
-    avatar,
-    pathbox(post.path),
+    class = "base",
+    --avatar,
     h1{a{ href="/posts/"..post.slug, post.title}},
     hr{},
     abody,
     hr{},
-    --h5 { a { href="/posts/"..post.slug.."#comments", i { class="fa fa-comments fa-fw" }, "&nbsp;"..[[0 comments]] }},
     h2 { i { class="fa fa-pencil-square-o fa-fw" }, "&nbsp;"..author.name, " on ", time { i { class="fa fa-clock-o fa-fw" }, post.date:month_name(true).." "..post.date:day()..", "..post.date:year()}},
   }
 end
