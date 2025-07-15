@@ -6,7 +6,7 @@ local cssfiles = List{"main", "prism", "katex.min", "font-awesome.min"}
 local jsfiles = List{ "syntax-prism", "katex.min", "mathtex-script-type.min", "auto-render.min" }
   :map(function(n) return script { defer="", src="/"..n..".js" } end)
 
-return function(name, canon, site, author)
+return function(name, canon, site, author, ...)
   local pagetitle = site.name
   if name ~= nil then
     pagetitle = pagetitle.." - "..name
@@ -31,7 +31,7 @@ return function(name, canon, site, author)
     link { rel="apple-touch-icon", href="/favicon.ico" },
     link { rel="shortcut icon", type="image/x-icon", href="/favicon.ico" },
     link { rel="alternate", type="application/rss+xml", title=site.name.." - RSS", href="/index.xml" },
-    link { rel="preload", href="/img/tile.png", as="image" },
+    link { rel="preload", href="/img/feather.svg", as="image" },
   },
   cssfiles,
   {
@@ -49,6 +49,6 @@ return function(name, canon, site, author)
   },
   jsfiles,
   {
-    
+    ...
   }))
 end

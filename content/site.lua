@@ -7,9 +7,9 @@ return {
     color = "00090f",
     navbar = { 
       {link="/", name="News", icon="fa-rss fa-lg" }, 
-      {link="https://github.com/Fundament-Institute/feathergui", name="Feather", icon="fa-leaf fa-lg" }, 
+      {link="https://github.com/Fundament-Institute/feather-ui", name="Feather", icon="fa-leaf fa-lg" }, 
       {link="https://github.com/Fundament-Institute/alicorn", name="Alicorn", icon="fa-gears fa-lg" }, 
-      {link="https://github.com/Fundament-Institute", name="GitHub", icon="fa-github fa-lg" }, 
+      {link="https://opencollective.com/fundament", name="Donate", icon="fa-heart fa-lg" }, 
     },
   },
 }

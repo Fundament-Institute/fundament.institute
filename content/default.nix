@@ -27,7 +27,7 @@ let
       description = "Fundament Research Institute website";
       homepage = "https://github.com/Fundament-Institute/fundament.institute";
 
-      license = lib.licenses.apache2;
+      license = lib.licenses.asl20;
       platforms = lib.platforms.all;
     };
   };
