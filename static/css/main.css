@@ -942,6 +942,6 @@ footer a:active {
 
 @media (max-width: 380px) {
   header nav ul li {
-    padding: 0.5em 0.25em;
+    padding: 0.5em 0.5em;
   }
 }
