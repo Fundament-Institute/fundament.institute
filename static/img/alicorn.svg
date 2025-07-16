@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   inkscape:export-ydpi="300"
-   inkscape:export-xdpi="300"
-   inkscape:export-filename="D:\Erik Documents\Pictures\logos\alicorn.png"
    width="158.75182mm"
    height="21.956291mm"
    viewBox="0 0 158.75182 21.956291"
    version="1.1"
    id="svg878"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   sodipodi:docname="alicorn2.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
@@ -47,7 +40,6 @@
          id="stop1489" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient1491"
        id="linearGradient1493"
        x1="110.0237"
@@ -56,7 +48,6 @@
        y2="46.425877"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient1491"
        id="linearGradient4245"
        x1="268.62189"
@@ -66,32 +57,6 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.17347848,0,0,0.17347848,-34.782304,15.964432)" />
   </defs>
-  <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.74999999"
-     inkscape:cx="54.000001"
-     inkscape:cy="-159.33334"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     inkscape:pagecheckerboard="true"
-     inkscape:window-width="1593"
-     inkscape:window-height="1233"
-     inkscape:window-x="3937"
-     inkscape:window-y="404"
-     inkscape:window-maximized="0"
-     inkscape:showpageshadow="2"
-     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata875">
     <rdf:RDF>
@@ -105,21 +70,41 @@
   </metadata>
   <g
      transform="translate(-0.73645224,-50.285116)"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-size:12.7715px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient1493);fill-opacity:1;stroke-width:0.319288"
-       x="34.766804"
-       y="59.57304"
+    <g
+       aria-label="ALICORN"
+       transform="scale(0.82866681,1.2067576)"
        id="text415"
-       transform="scale(0.82866681,1.2067576)"><tspan
-         sodipodi:role="line"
-         id="tspan413"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient1493);fill-opacity:1;stroke-width:0.319288"
-         x="34.766804"
-         y="59.57304">ALICORN</tspan></text>
+       style="font-size:12.7715px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient1493);stroke-width:0.319288">
+      <path
+         d="M 46.430808,42.053752 58.083172,59.57304 h -5.30817 l -6.309272,-9.289297 -6.402397,9.277656 -5.296529,0.01164 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path323" />
+      <path
+         d="m 62.820946,42.228363 h 4.854181 v 13.677849 l 9.114686,-0.08148 V 59.57304 H 62.820946 Z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path325" />
+      <path
+         d="m 84.577455,42.379692 h 4.842541 v 17.344677 h -4.842541 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path327" />
+      <path
+         d="m 115.05287,55.766524 0.0233,3.771594 -7.776,-0.01164 q -4.30707,0 -7.391862,-2.549318 -2.991666,-2.479474 -2.991666,-5.971691 v -0.419066 q 0,-3.399091 2.991666,-5.890206 2.875262,-2.363067 7.415142,-2.549318 h 0.0116 v 0.01164 h 7.7178 l 0.0233,3.853079 -7.7178,0.03492 q -2.70065,0.01164 -4.07425,1.571498 -1.36197,1.548216 -1.36197,3.329246 0,1.781031 1.36197,3.352529 1.36196,1.571497 3.99277,1.466731 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path329" />
+      <path
+         d="m 136.54164,47.280437 q -1.79267,-1.478372 -4.31871,-1.478372 -2.51439,0.01164 -4.30706,1.501653 -1.78103,1.490013 -1.78103,3.562061 0,2.08369 1.78103,3.550421 1.79267,1.466731 4.30706,1.466731 2.52604,-0.01164 4.31871,-1.490013 1.80431,-1.490012 1.80431,-3.562061 0,-2.083689 -1.80431,-3.55042 z m 3.46894,9.917896 q -3.2012,2.665725 -7.70616,2.665725 -4.50496,0 -7.72944,-2.665725 -3.21284,-2.677367 -3.21284,-6.414039 0,-3.771594 3.21284,-6.437319 3.22448,-2.677367 7.72944,-2.677367 4.50496,0 7.70616,2.677367 3.21284,2.665725 3.21284,6.437319 0,3.736672 -3.21284,6.414039 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path331" />
+      <path
+         d="m 153.70007,59.491555 -4.86582,-0.04656 0.0466,-17.437803 11.31479,-0.02328 q 2.49111,0.104766 3.87636,0.873054 1.39688,0.756647 2.18845,2.211737 0.79157,1.455091 0.43071,3.340888 -0.36086,1.874156 -3.21284,3.014947 l 5.30817,8.05538 -5.15684,-0.02328 -6.22779,-9.382423 2.96839,-0.03492 q 1.52493,-0.465629 1.55985,-2.304863 0.0349,-1.850875 -2.47947,-1.944001 l -5.76216,0.03492 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path333" />
+      <path
+         d="m 178.6345,50.749372 -0.0349,8.823668 H 173.7454 V 42.228363 l 13.81754,8.835309 v -8.963357 l 4.90074,0.08149 v 17.344677 z"
+         style="font-size:23.8402px;font-family:'AIRBORNE GP';-inkscape-font-specification:'AIRBORNE GP, Normal'"
+         id="path335" />
+    </g>
     <path
        id="path1542"
        style="fill:url(#linearGradient4245);fill-opacity:1;stroke-width:0.867391"
