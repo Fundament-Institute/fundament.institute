@@ -26,16 +26,13 @@ return function(posts, authors)
   #endif
 
   varying vec4 vColor;
-  varying vec3 uvw;
+  varying vec4 uvwz;
 
   void main() {
-    //gl_FragColor = vec4(uvw.x, uvw.y, 0.0, 1.0);
-    float warp = 1.0 - (abs(uvw.x - 0.5) * 2.0);
-    float deflection = uvw.z * -10.0;
-    float y = uvw.y + (warp * deflection);
+    float y = uvwz.y;
     float dist = abs(y - 0.5) * 2.0;
-    dist = 1.0 - clamp(dist * 3.0, 0.0, 1.0);
-    gl_FragColor = vec4(dist);
+    dist = 1.0 - clamp(dist * 50.0 / uvwz.w, 0.0, 1.0);
+    gl_FragColor = vec4(dist / uvwz.w * 3.0) * vec4(0.5, 0.8, 1.0, 1.0);
   }
   ]] },
   script { id="vertex-shader", type="x-shader/x-vertex", [[
@@ -43,7 +40,7 @@ return function(posts, authors)
   uniform mat4 projection;
   uniform float time;
   varying vec4 vColor;
-  varying vec3 uvw;
+  varying vec4 uvwz;
 
   const float PI = 3.141592653589;
 
@@ -62,22 +59,16 @@ return function(posts, authors)
     return y;
   }
 
-  //float modulo(float x, float m) {
-  //  float v = (x / m);
-  //  return (v - floor(v)) * m;
-  //}
-
 //const UNITX = array(0.0, 1.0, 0.0, 1.0, 1.0, 0.0);
 //const UNITY = array(0.0, 0.0, 1.0, 0.0, 1.0, 1.0);
 
   void main() {
     vColor = vec4(1.0,1.0,1.0,1.0);
     int idx = int(abs(position.y));
-    vec3 pos = vec3(position.x, (position.y / abs(position.y))*0.5 - 5.0, position.z);
+    float blur = pow(abs(position.z + 8.0), 0.9);
+    vec3 pos = vec3(position.x, (position.y / abs(position.y))*0.3*blur - 5.0, position.z);
     vec2 xz = vec2(pos.x, pos.z);
     float sample1 = addy(pos);
-    float sample2 = addy(vec3((position.x + position.w) * 0.5, pos.y, pos.z));
-    float sample3 = addy(vec3(position.w, pos.y, pos.z));
     pos.y += sample1 * 10.0;
     vec2 uv;
 
@@ -95,8 +86,7 @@ return function(posts, authors)
     uv = vec2(1.0,1.0);
     }
 
-    // The deflection here is the difference between the linear average between 1 and 3 and the true sample at point 2
-    uvw = vec3(uv.x, uv.y, ((sample1 + sample3) * 0.5) - sample2);
+    uvwz = vec4(uv.x, uv.y, 0.0, blur);
     gl_Position = projection * vec4(pos, 1.0);
   }
   ]] },
@@ -134,7 +124,7 @@ return function(posts, authors)
     <rect fill="#00090f" x="3" width="3" height="3" y="3"></rect>
   </pattern>
   <rect x="0" y="0" width="100%" height="100%" fill="url(#patgrid)"></rect></svg>]],
-            div{ style="margin: 0 auto;max-width:576px;padding: 0 14px;position:relative;", img { class="alicorn", src="/img/alicorn.svg", alt="Alicorn" } },
+            div{ style="margin: 0 auto;max-width:576px;padding: 0 14px;position:relative;", img { class="feather", src="/img/alicorn.svg", alt="Alicorn" } },
             h4 { "A safe, high performance programming language without compromising abstraction and convenience. Designed to maintain safety guarantees while providing access to performance primitives by using novel metaprogramming systems that allow combining implicit behaviors that get out of your way and detailed specifications of exactly how to do something most efficiently, connected by a powerful type system to catch mistakes early and let you say what you mean."},
             h3 { i { class="fa fa-github fa-fw" }, a { href="https://github.com/Fundament-Institute/alicorn0", "GitHub&nbsp;&#10095;" } },
             h3 { i { class="fa fa-user fa-fw" },a { href="https://opencollective.com/alicorn", "Collective&nbsp;&#10095;" } },

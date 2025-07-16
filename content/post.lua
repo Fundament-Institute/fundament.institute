@@ -34,6 +34,7 @@ return function(post, authors)
       },
       main { 
         section { 
+          class = "base",
           --author,
           h1{a{ href="/posts/"..post.slug, post.title}},
           hr{},
