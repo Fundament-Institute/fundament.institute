@@ -50,7 +50,7 @@ function createCubeData() {
   const MAX_WIDTH = 2.0;
   const MAX_DEPTH = 100.0;
   const DEPTH_STEP = 1.0;
-  const LINE_STEP = 0.01;
+  const LINE_STEP = 0.02;
   const LINE_HEIGHT = 0.5;
 
   let positions = [];
