@@ -1,0 +1,151 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "organization",
+        "role": "owner",
+        "name": "Fundament Research Institute",
+        "email": "contact@fundament.institute",
+        "description": "Progress for people, not profits. Doing research in computer science and engineering for the public good, while managing open-source projects utilizing this research.",
+        "webpageUrl": {
+            "url": "https://fundament.institute/"
+        }
+    },
+    "projects": [
+        {
+            "guid": "feather",
+            "name": "Feather UI",
+            "description": "A reactive data-driven UI framework for Rust.",
+            "webpageUrl": {
+                "url": "https://github.com/Fundament-Institute/feather-ui",
+                "wellKnown": "https://github.com/Fundament-Institute/feather-ui/blob/main/.well-known/funding-manifest-urls"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/Fundament-Institute/feather-ui",
+                "wellKnown": "https://github.com/Fundament-Institute/feather-ui/blob/main/.well-known/funding-manifest-urls"
+            },
+            "licenses": [
+                "spdx:Apache-2.0"
+            ],
+            "tags": [
+                "developer-tools",
+                "data-visualization",
+                "graphics",
+                "animation",
+                "user-experience"
+            ]
+        },
+        {
+            "guid": "alicorn",
+            "name": "Alicorn",
+            "description": "A GPU native general-purpose programming language with dependent types and modular semantics.",
+            "webpageUrl": {
+                "url": "https://github.com/Fundament-Institute/alicorn0",
+                "wellKnown": "https://github.com/Fundament-Institute/alicorn0/blob/main/.well-known/funding-manifest-urls"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/Fundament-Institute/alicorn0",
+                "wellKnown": "https://github.com/Fundament-Institute/alicorn0/blob/main/.well-known/funding-manifest-urls"
+            },
+            "licenses": [
+                "spdx:Apache-2.0"
+            ],
+            "tags": [
+                "developer-tools",
+                "programming",
+                "graphics",
+                "software-engineering",
+                "development"
+            ]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "github",
+                "type": "payment-provider",
+                "address": "https://github.com/Fundament-Institute",
+                "description": "Donate to the institute via GitHub Sponsors."
+            },
+            {
+                "guid": "feather-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/feather-ui",
+                "description": "Donate directly to Feather's Collective, where we track all income and expenses."
+            },
+            {
+                "guid": "alicorn-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/alicorn",
+                "description": "Donate directly to Alicorn's Collective, where we track all income and expenses."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "supporter",
+                "status": "active",
+                "name": "Supporter",
+                "description": "Contribute to Feather's development! We'll look at your bug reports first, and you'll get a Supporter role in the Discord, where we will answer your questions as best we can.",
+                "amount": 5,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "github",
+                    "feather-collective"
+                ]
+            },
+            {
+                "guid": "enthusiast",
+                "status": "active",
+                "name": "Enthusiast",
+                "description": "Your name or project logo or your choosing goes in the project Readme.",
+                "amount": 25,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "github",
+                    "feather-collective"
+                ]
+            },
+            {
+                "guid": "feature-sponsor",
+                "status": "active",
+                "name": "Feature Sponsor",
+                "description": "At this tier, get your name or logo on the project website, and your feature requests will be prioritized. If your organization depends on Feather and would like specific features, enhancements, or platform support, consider sponsoring this development work. Sponsoring helps us hire additional help to build features faster.",
+                "amount": 100,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "github",
+                    "feather-collective"
+                ]
+            },
+            {
+                "guid": "enterprise-support",
+                "status": "active",
+                "name": "Enterprise Support",
+                "description": "We'll join your company chat to provide help and support. We'll provide any custom implementations that might be necessary to meet your specific needs.",
+                "amount": 1000,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "github",
+                    "feather-collective"
+                ]
+            },
+            {
+                "guid": "donation",
+                "status": "active",
+                "name": "Donation",
+                "description": "Make a custom one-time or recurring donation.",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": [
+                    "github",
+                    "feather-collective",
+                    "alicorn-collective"
+                ]
+            }
+        ]
+    }
+}
